@@ -1,0 +1,3 @@
+Configuration management
+
+Configuration management in Linux involves controlling and maintaining system settings across multiple machines. It encompasses manual editing of configuration files, scripting for automation, package managers for software configurations, version control for tracking changes, and specialized tools like Ansible, Chef, Puppet, SaltStack, and CFEngine. These tools automate configuration tasks, ensuring consistency, reliability, and scalability. Configuration management streamlines setup, updates, and maintenance, reducing errors and enhancing system security and stability.
