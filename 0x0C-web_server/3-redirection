@@ -24,13 +24,13 @@ sudo chmod -R 755 /var/www
 cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
 
 # Creating new index
-echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
+echo "Hello World!" | sudo tee /var/www/html/index.html >/dev/null
 
 # Setting up /redirect_me to a youtube video
 string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/youtube.com\/@NathanielBasseyMain permanent;"
 
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
-
+i
 # Restarting nginx
 sudo service nginx restart
 
