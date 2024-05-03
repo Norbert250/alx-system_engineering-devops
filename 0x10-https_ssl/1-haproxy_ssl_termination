@@ -47,5 +47,5 @@ frontend ndaisenga-frontend-https
 
 backend ndaisenga-backend
         balance roundrobin
-        server 43588-web-01 100.26.231.113 check
-        server 43588-web-02 34.201.165.169 check
+        server 43588-web-01 100.26.231.113:80 check
+        server 43588-web-02 34.201.165.169:80 check
