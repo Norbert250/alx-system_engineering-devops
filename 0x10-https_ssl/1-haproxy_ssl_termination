@@ -41,7 +41,7 @@ frontend ndaisenga-frontend
         default_backend ndaisenga-backend
 
 frontend ndaisenga-frontend-https
-        bind *:443 ssl crt /etc/letsencrypt/live/www.ndaisenga.tech/fullchain.pem
+        bind *:443 ssl crt /etc/letsencrypt/live/www.ndaisenga.tech/www.ndaisenga.tech
         http-request set-header X-Forwarded-Proto https
         default_backend ndaisenga-backend
 
