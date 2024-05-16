@@ -41,6 +41,10 @@ defaults
 
 frontend th3gr00t-tech-frontend
     bind *:80
+    mode http
+    stats enabled
+    stats uri /haproxy?stats
+    option forward for
     default_backend th3gr00t-tech-backend
 
 backend th3gr00t-tech-backend
